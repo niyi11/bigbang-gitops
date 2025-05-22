@@ -1,0 +1,30 @@
+istio:
+  enabled: true
+
+kyverno:
+  enabled: true
+
+monitoring:
+  enabled: true
+
+loki:
+  enabled: true
+
+promtail:
+  enabled: true
+
+prometheus:
+  enabled: true
+
+grafana:
+  enabled: true
+
+gatekeeper:
+  enabled: false
+tempo:
+  enabled: false
+fluentbit:
+  enabled: false
+twistlock:
+  enabled: false
+

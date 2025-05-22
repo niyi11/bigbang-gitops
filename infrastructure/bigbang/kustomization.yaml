@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - github.com/defenseunicorns/bigbang//chart?ref=1.50.1
+namespace: bigbang
+helmCharts:
+  - name: bigbang
+    releaseName: bigbang
+    namespace: bigbang
+    version: 1.50.1
+    repo: https://repo1.dso.mil/platform-one/big-bang/bigbang.git
+    valuesFile: bigbang-values.yaml
+
